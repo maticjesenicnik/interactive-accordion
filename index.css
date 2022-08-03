@@ -9,16 +9,21 @@
 
 #melody-side {
   width: 150px;
-  aspect-ratio: 4/9;
   background: linear-gradient(to left, #c0c0c0 0%, #71706e 10%);
-  display: grid;
-  row-gap: 10px;
+  display: flex;
+  flex-direction: column;
   padding: 40px;
   border-radius: 25px 0 0 25px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(12, 1fr);
   align-content: center;
   justify-content: center;
+}
+
+#melody-btn-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  row-gap: 10px;
+  padding-top: 40px;
 }
 
 .melody-btn {
@@ -103,7 +108,6 @@
 
 #bass-side {
   width: 150px;
-  aspect-ratio: 4/9;
   background: linear-gradient(to bottom right, #ff3300 0%, #990000 48%);
   display: grid;
   row-gap: 10px;
