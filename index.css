@@ -1,5 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 3vh;
+  text-align: center;
+  max-width: 90vw;
+}
+
 #flex-container {
-  width: 650px;
+  width: 50vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -26,13 +38,14 @@
   padding-top: 40px;
 }
 
-.melody-btn {
+.melody-btn, .bass-btn {
   aspect-ratio: 1/1;
   width: 40px;
   background-color: rgb(190, 190, 190);
   border: 0.5px solid black;
   border-radius: 100%;
 }
+
 
 .melody-btn:hover {
   background-color: rgb(160, 160, 160);
@@ -95,7 +108,7 @@
 .melody-btn.row-d:nth-child(37) { grid-row: 7; }
 
 #bellow {
-  width: 350px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(1, 1fr);
@@ -107,7 +120,7 @@
 }
 
 #bass-side {
-  width: 150px;
+  width: 200px;
   background: linear-gradient(to bottom right, #ff3300 0%, #990000 48%);
   display: grid;
   row-gap: 10px;
@@ -115,14 +128,6 @@
   border-radius: 0px 25px 25px 0px;
   align-content: center;
   justify-content: center;
-}
-
-.bass-btn {
-  aspect-ratio: 1/1;
-  width: 40px;
-  background-color: rgb(190, 190, 190);
-  border: 0.5px solid black;
-  border-radius: 100%;
 }
 
 .bass-btn:nth-child(odd) {
@@ -136,4 +141,10 @@
 
 .bass-btn:hover {
   background-color: rgb(160, 160, 160);
+}
+
+.btn {
+  margin-top: 1vh;
+  font-size: 1.5em;
+  padding: 10px;
 }

@@ -1,0 +1,23 @@
+@keyframes change-width {
+  from {
+    width: 50vw;
+  }
+  to { 
+    width: 70vw;
+  } 
+}
+
+#flex-container {
+  animation-name: change-width;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.animation-paused {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused; 
+  animation-play-state: paused;
+}
